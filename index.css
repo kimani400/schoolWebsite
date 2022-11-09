@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body { 
+    background-image: url("images/backgroung.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body{
+    background-image: url("images/better.png");
+}
+.wraper{
+    width: 1170px;
+    margin: auto;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 4%;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: rgb(129, 4, 4);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+}
+.nav-area li a:hover{
+    background: rgb(232, 241, 243);
+    color: #333;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+    margin-left: 4%;
+    border-radius: 50%;
+}
+.welcome-text{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: rgb(5, 19, 179);
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-top: 10%;
+}
+.welcome-text a{
+    border: 1px solid rgb(7, 213, 245);
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.welcome-text a:hover{
+    background: rgb(209, 226, 232);
+    color: rgb(114, 4, 4);
+    transform: rotate(3sec);
+}
