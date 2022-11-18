@@ -20,21 +20,26 @@ body{
     float: right;
     list-style: none;
     margin-top: 10px;
-    margin-right: 4%;
+    margin-right: 6%;
 }
 .nav-area li{
     display: inline-block;
 }
 .nav-area li a{
-    color: rgb(129, 4, 4);
+    color: rgb(5, 47, 199);
     text-decoration: none;
     padding: 5px 20px;
     font-family: poppins;
     font-size: 16px;
+    background-color: white;
+    border-radius: 10px;
 }
 .nav-area li a:hover{
-    background: rgb(232, 241, 243);
-    color: #333;
+    background: rgb(240, 226, 198);
+    color: rgb(37, 6, 238);
+}
+.nav-area li a:hover{
+    transition: all 400ms ease-in-out;
 }
 .logo img{
     width: 100px;
