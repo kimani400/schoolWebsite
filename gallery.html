@@ -11,59 +11,53 @@
 <body>
     <div class="nav-area">
         <ul class="nav-area">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="services.html">Our Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
     </ul>
     </div>
-    <div class="container">
-        <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="school img/img1.png"></div>
-      <div class="swiper-slide"><img src="school img/img2.jpg"></div>
-      <div class="swiper-slide"><img src="school img/img3.jpg"></div>
-      <div class="swiper-slide"><img src="school img/img4.jpg"></div>
-      <div class="swiper-slide"><img src="school img/img5.jpg"></div>
-    
+    <div class="head"><h1>G A L L E R Y</h1></div>
+    <div class="full-img" id="fullimgBox">
+      <img src="images/malech.jpg" id="fullimg">
+      <span onclick="closefullimg()">x</span>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
+    <div class="img-gallery">
+      <img src="school img/img1.png" onclick="openfullimg(this.src)">
+      <img src="school img/img2.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img3.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img4.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img5.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img6.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img7.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img8.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img9.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img10.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img11.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img13.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img12.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img14.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img15.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img16.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img17.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img18.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img19.jpg" onclick="openfullimg(this.src)">
+      <img src="school img/img20.jpg" onclick="openfullimg(this.src)">
+      
+    </div>      
   </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-  
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-    </script>
+  <script>
+    var fullimgBox = document.getElementById("fullimgBox");
+    var fullimg = document.getElementById("fullimg");
+    function openfullimg(pic){
+      fullimgBox.style.display = "flex";
+      fullimg.src = pic;
+    }
+    function closefullimg(){
+      fullimgBox.style.display = "none";
+    }
+  </script>
+   <a href="#" class="btn">Get in Touch</a>
 </body>
 </html>
